@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.filetransfer.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_selfipaddress"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_ip"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_ipaddress"
+            android:text="@string/ip_label"
+            android:inputType="none"
+            android:editable="false"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etxt_ip"
+            android:inputType="text"
+            android:editable="true"
+            android:enabled="true"
+            android:selectAllOnFocus="false"
+            />
+    </LinearLayout>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:id="@+id/gridView"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:columnWidth="80dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:layout_weight="0.74"
+        android:layout_height="120dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_files"
+        android:id="@+id/btn_selectfile"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_files"
+        android:id="@+id/btn_send"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

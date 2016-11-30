@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FileTransfer</string>
+    <string name="ip_label">Target IP Address:</string>
+    <string name="add_files">Add files...</string>
+    <string name="send_files">Send files</string>
+    <string name="accept_title">Receiving files...</string>
+</resources>
